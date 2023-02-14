@@ -29,7 +29,7 @@ export const answer = (command: string, from: string) => {
     switch (command)
     {
         case "/bemvindo":
-            return 
+            return BEMVINDO
         case '/?':
             return BOT
         case '/mensageria':
@@ -53,6 +53,6 @@ export const answer = (command: string, from: string) => {
         case '/docregimento':
             return DOC_RI
         default:
-            return 'Estoy confuso'
+            return 'Estoy confuso\n'+BOT
     }
 }
